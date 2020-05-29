@@ -1,0 +1,3 @@
+---
+ansible_role_name: docker-compose
+travis_decrypt_key: f2c81ddc8dbc

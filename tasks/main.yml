@@ -1,0 +1,2 @@
+- name: Include install type specific tasks
+  include: "install-{{ docker_compose_install_type }}.yml"
