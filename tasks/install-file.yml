@@ -11,6 +11,7 @@
       Package: docker-compose
       Pin: version *
       Pin-Priority: -1
+    mode: 0644
     dest: /etc/apt/preferences.d/docker-compose
   become: true
 
