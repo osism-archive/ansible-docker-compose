@@ -17,6 +17,7 @@
       Pin: release o=pbuilder
       Pin-Priority: 999
     dest: /etc/apt/preferences.d/docker-compose
+    mode: 0644
   become: true
   when: docker_compose_configure_repository|bool
 
@@ -26,6 +27,7 @@
     state: present
     filename: docker-compose
     update_cache: yes
+    mode: 0644
   become: true
   when: docker_compose_configure_repository|bool
 
